@@ -1,0 +1,153 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.luckiest-guy{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/* PAGE COLORS */
+
+:root {
+    --dark : #222222;
+    --color-primary: #FF7F00;
+    --color-secondary: #FFB601;
+    --darker-primary: #9B5100;
+    --darker-secondary: #AC6A00;
+    --twitch: #6441A5;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*
+    COMPONENTS
+    - default button
+    - section
+    - server card
+*/
+
+.default-button{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: .3rem;
+    transition: all .3s;
+}
+
+.default-button:hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+.section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*
+    NAVBAR
+    - navbar color
+    - navbar active link
+*/
+
+.navbar-color{
+    background-color: #9c6f4556;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*
+    PAGE STYLES
+    - body
+    - logo
+    - divisor
+    - momotivational phrase
+*/
+
+body{
+    background-color: var(--dark);
+    color: white;
+}
+
+.logo{
+    background-image: url(./assets/SiteLogo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 40%;
+    max-width: 50rem;
+}
+
+.divisor{
+    margin-top: -5vw;
+    margin-bottom: 1rem;
+    max-width: 30rem;
+    height: 5px;
+    width: 80%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius:  100rem;
+    color: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+.motivational-Phrase{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    background-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.zero-two-display{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+    flex-wrap: nowrap;
+    font-size: 1vw;
+    background-image: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*---------------------------------------------------------------------------------------*/
+/*
+    BUTTONS
+    - gradient button
+    - outline gradient button
+    - outline twitch button
+*/
+.gradient-button{
+    background: linear-gradient(90deg, var(--darker-secondary), var(--darker-primary));
+    width: 5rem;
+    color: white;
+}
+
+.gradient-button.active{
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+.gradient-outline-button{
+    background: transparent;
+    border: 1px solid linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    color: white;
+}
+
+.twitch-outline-button{
+    background: transparent;
+    border: 1px solid var(--twitch);
+    color: var(--twitch);
+}
+
+@media (max-width: 1024px){
+    .logo{
+        margin-bottom: -10vw;
+    }
+    
+}
