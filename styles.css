@@ -28,6 +28,9 @@
 */
 
 .default-button{
+    font-family: "Luckiest Guy", cursive;
+    width: 10rem;
+    height: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     border: none;
@@ -125,7 +128,7 @@ body{
 */
 .gradient-button{
     background: linear-gradient(90deg, var(--darker-secondary), var(--darker-primary));
-    width: 5rem;
+
     color: white;
 }
 
@@ -135,13 +138,15 @@ body{
 
 .gradient-outline-button{
     background: transparent;
-    border: 1px solid linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border: 3px solid;
+    border-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary)) 1;
+    border-radius: .3rem;
     color: white;
 }
 
 .twitch-outline-button{
     background: transparent;
-    border: 1px solid var(--twitch);
+    border: 3px solid var(--twitch);
     color: var(--twitch);
 }
 
