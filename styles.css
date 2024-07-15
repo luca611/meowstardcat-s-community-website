@@ -149,5 +149,9 @@ body{
     .logo{
         margin-bottom: -10vw;
     }
+
+    .motivational-Phrase{
+        font-size: 1rem;
+    }
     
 }
