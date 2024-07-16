@@ -1,8 +1,10 @@
-let home ,about,servers;
+let home ,about,servers, aboutDiv, serversDiv;
 document.addEventListener('DOMContentLoaded', () => {
     home = document.getElementById('home');
     about = document.getElementById('about');
     servers = document.getElementById('servers');
+    aboutDiv = document.getElementById('aboutDiv');
+    serversDiv = document.getElementById('serversDiv');
 });
 
 
@@ -15,11 +17,16 @@ function SwitchActive(id){
 }
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY >= about.offsetTop){
-        SwitchActive('about');
-    } else if(window.scrollY >= servers.offsetTop){
+    if(window.scrollY >= serversDiv.offsetTop){
         SwitchActive('servers');
-    } else {
+    } 
+    else if(window.scrollY >= aboutDiv.offsetTop){
+        SwitchActive('about');
+    }else {
         SwitchActive('home');
     }
 });
+
+function href(link){
+    window.location.href = link;
+}

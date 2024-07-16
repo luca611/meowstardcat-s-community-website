@@ -30,10 +30,10 @@
                     <a class="nav-link" href="#" onclick="SwitchActive('home')">Home</a>
                 </li>
                 <li id="about" class="nav-item">
-                    <a class="nav-link" href="#About" onclick="SwitchActive('about')">About us</a>
+                    <a class="nav-link" href="#aboutDiv" onclick="SwitchActive('about')">About us</a>
                 </li>
                 <li id="servers" class="nav-item">
-                    <a class="nav-link" href="#" onclick="SwitchActive('servers')">Servers</a>
+                    <a class="nav-link" href="#serversDiv" onclick="SwitchActive('servers')">Servers</a>
                 </li>
             </ul>
         </div>
@@ -43,7 +43,7 @@
     <!-- Home section  -->
     <div class="d-flex flex-column">
         <div class="section d-flex flex-row">
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="col-12 col-xl-6 d-flex flex-column align-items-center justify-content-center text-center">
                 <!-- Content for the first column -->
                 <div class="logo">
 
@@ -52,24 +52,24 @@
                 <p class="motivational-Phrase">Connect, Play, and Enjoy Your Stay!</p>
                 <div class="align-items-center justify-content-center text-center">
                     <div class="row">
-                        <div class="col-12 col-md-6">
-                            <button class="default-button gradient-button active">Join the discord</button>
+                        <div class="col-12 col-md-6" onclick="href('https://discord.com/invite/mcgc')">
+                            <button class="default-button gradient-button active" >Join the discord</button>
                         </div>
-                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0" onclick="href('https://status.meowstard.cat/status/mcgc')">
                             <button class="default-button gradient-outline-button">Status</button>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center mt-4">
+                    <div class="row d-flex justify-content-center mt-4" onclick="href('https://www.twitch.tv/TheMeowstardCat')">
                         <div class="col-12 col-md-6">
                             <button class="default-button twitch-outline-button">twitch</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center">
+            <div class="col-xl-6 d-none d-xl-flex flex-column align-items-center justify-content-center text-center">
                 <!-- Content for the second column -->
                 <div class="zero-two-display">
-                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                    <div class="zero-two-display"></div>
                     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡷⡀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠺⣟⡽⠀⠀⠀⠀⠀⠀⠀⠈⠑⠂⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠊⠁⠀⠀⠙⠁⠀⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠈⠳⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -101,22 +101,21 @@
                     ⠀⡞⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣄⠀⢸⢸⠛⠙⠻⠀⠀⠀⠀⢣⡇⠀⠀⡇⢡⠀⠀⠀⠀⠀⡀⠀⠀⠀⡇
                     ⠀⢳⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⡿⠀⠀⡞⡀⠀⠀⠀⠀⠀⠀⠘⡾⡄⠀⡇⢸⠀⠀⠀⠀⡼⠁⠀⠀⢠⠃
                     ⢸⢸⠀⣾⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣇⠀⠀⠀⠀⠀⠀⠀⠘⣿⣆⡇⡆⠀⠀⣀⡜⠁⠀⠀⠀⢸⡆
-                    </textarea>
                 </div>
             </div>
 
 
         </div>
-        <div id="About" class="section gradientBg">
+        <div id="aboutDiv" class="section gradientBg">
             <!-- Content for the About section -->
             <div class="row full-width">
                 <div class="custom-col">
                     <div class="text-container left-box">
                         <h1 class="gradient-title luckiest-guy"> About Us </h1>
-                        <p class="luckiest-guy description"> MeowstardCat's Gaming Community was established in 2017. <br>
+                        <p class="luckiest-guy description"> <b class="color-orange">MeowstardCat's Gaming Community </b>was established in 2017. <br>
                             We run game server for free no pay to win. </p>
                     </div>
-                    <div class="d-none d-md-block cat-display">
+                    <div class="d-none d-xl-block cat-display">
                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡶⠒⠛⠛⠓⠒⠤⣄<br>
                         ⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣶⣦⠤⠤⠒⢛⣟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⠶⣦⣀<br>
                         ⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⠟⠑⠶⠶⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠑⠒⠤⢄⣀⠀⠀⠀⠀⠀⢀⣀⣀⣀<br>
@@ -146,15 +145,17 @@
                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⠂⠠⠤⠄⠀⠀⠀⠀⠐⠒⠊⠁<br>
                     </div>
                 </div>
-                <div class="custom-col">
+                <div class="custom-col custom-right">
                     <!-- Content for the right column -->
                     <div class="text-container right-box">
+                        <br>
                         <h1 class="gradient-title luckiest-guy"> why? </h1>
-                        <p class="luckiest-guy description"> We believe in fostering a community that accepts anyone. <br>
+                        <br><br>
+                        <p class="luckiest-guy description"> We believe in fostering a community that <b class="color-orange">accepts anyone. </b><br>
 
-                            We like to have a place to make new friends and have fun in life and escape from hard times in life. <br>
+                            We like to have a place to <b class="color-orange">make new friends</b> and <b class="color-orange">have fun </b>in life and escape from hard times in life. <br>
                             
-                            Every day is a struggle no matter what you go thorugh and having a place to enjoy and make friends is why MCGC was started. <br><br>
+                            Every day is a struggle no matter what you go thorugh and <b class="color-orange">having a place to enjoy and make friends is why MCGC was started. </b><br><br>
                             
                             Hope to see you soon. </p>
                     </div>
@@ -162,10 +163,25 @@
             </div>
 
         </div>
+        <div id="serversDiv" class="section">
+            <h1 class="luckiest-guy gradient-title bigger-title">
+                Our Servers
+            </h1>
+            <div class="container d-flex justify-content-center">
+                <div class="divisor"></div>
+            </div>
+        </div>
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <footer class="footer-size gradientBg">
+            <p class="thanks">
+                Special thank you to: <b>Aethasilia, Kamisoi, Whos, Nightmare</b> and <b>Saiaku</b><br>
+                for over the years <b>without you this community wouldn't be what it is today.</b>
+            </p>
+        </footer>
 </body>
 
 </html>
