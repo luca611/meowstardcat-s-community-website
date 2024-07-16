@@ -70,6 +70,20 @@
     height: 10rem;
     padding: 2rem;
 }
+
+.card{
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 45vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
 /*---------------------------------------------------------------------------------------*/
 /*
     NAVBAR
@@ -222,6 +236,24 @@ body{
     font-size: 1.5rem;
     color: white;
 }
+
+.servers{
+    max-width: 80vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.titleCard{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+
+.card-margin{
+    margin-top: 1rem !important;
+}
 /*---------------------------------------------------------------------------------------*/
 /*
     BUTTONS
@@ -293,5 +325,8 @@ body{
 
     .thanks{
         font-size: 0.9rem;
+    }
+    .card{
+        min-width: 66vw;
     }
 }
