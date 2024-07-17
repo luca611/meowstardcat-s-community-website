@@ -16,6 +16,10 @@
     --color-secondary: #FFB601;
     --darker-primary: #9B5100;
     --darker-secondary: #AC6A00;
+    --color-greenPrimary: #32cd32 ;
+    --color-greenSecondary: #109210;
+    --color-bluePrimary: #3b7080;
+    --color-blueSecondary: #1f3a4d;
     --twitch: #6441A5;
 }
 
@@ -40,7 +44,7 @@
 
 .default-button:hover{
     cursor: pointer;
-    filter: brightness(0.9);
+    filter: brightness(0.8);
 }
 
 .section{
@@ -49,9 +53,6 @@
     padding-bottom: 2rem;
 }
 
-.full-width{
-    width: 100%;
-}
 
 
 .custom-col{
@@ -72,12 +73,14 @@
 }
 
 .card{
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(90deg, var(--darker-primary), var(--darker-secondary));
     border-radius: 10px;
     padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin: 1rem;
     min-width: 45vw;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,6 +116,40 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-secondary);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--dark);
+}
+
+*::-moz-scrollbar {
+    width: 10px;
+    background-color: var(--dark);
+}
+
+*::-moz-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
+
+*::-moz-scrollbar-thumb:hover {
+    background-color: var(--color-secondary);
 }
 
 body{
@@ -202,6 +239,7 @@ body{
     padding-right: 5rem;
     border-radius: 10px;
     margin-top: 5rem;
+    font-weight: bold;
 }
 
 .left-box{
@@ -241,12 +279,13 @@ body{
     max-width: 80vw;
     overflow: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .titleCard{
     font-family: "Luckiest Guy", cursive;
     font-size: 3rem;
+    text-align: center;
     color: white;
 }
 
@@ -254,6 +293,28 @@ body{
 .card-margin{
     margin-top: 1rem !important;
 }
+
+
+.green-Gradient{
+    background: linear-gradient(90deg, var(--color-greenPrimary), var(--color-greenSecondary));
+    color: white;
+}
+
+.blue-Gradient{
+    background: linear-gradient(90deg, var(--color-bluePrimary), var(--color-blueSecondary));
+    color: white;
+}
+
+.credits{
+    font-size: 1rem;
+    color: white;    
+}
+
+.credits a{
+    color: white;
+    text-decoration: underline;
+}
+
 /*---------------------------------------------------------------------------------------*/
 /*
     BUTTONS
@@ -304,8 +365,13 @@ body{
     }
     
     .custom-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: auto;
+        flex-wrap: nowrap;
     }
 
     .description{
@@ -328,5 +394,23 @@ body{
     }
     .card{
         min-width: 66vw;
+    }
+
+    .left-box{
+        border-radius: 10px;
+        margin-left: inherit;
+    }
+
+    .right-box{
+        border-radius: 10px;
+        margin-right: inherit;
+    }
+
+    .titleCard{
+        font-size: 1.5rem;
+    }
+
+    .credits{
+        font-size: 0.7rem;
     }
 }

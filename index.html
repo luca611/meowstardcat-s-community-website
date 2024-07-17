@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>MeowstardCat community</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -16,10 +16,11 @@
     <nav class="navbar-color luckiest-guy navbar navbar-expand-lg navbar-dark fixed-top">
         <!--lang translation buttons-->
         <span>
-            <button class="default-button gradient-button active nav-button">eng</button>
-            <button class="default-button gradient-button nav-button">cat</button>
+            <button id="engButton" class="default-button gradient-button active nav-button" onclick="translateTo(0)">eng</button>
+            <button id="catButton" class="default-button gradient-button nav-button" onclick="translateTo(1)">cat</button>
         </span>
 
+        <!----------------------------------- Navbar links --------------------------->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,16 +28,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li id="home" class="nav-item active">
-                    <a class="nav-link" href="#" onclick="SwitchActive('home')">Home</a>
+                    <a id="homeText" class="nav-link" href="#" onclick="SwitchActive('home')">Home</a>
                 </li>
                 <li id="about" class="nav-item">
-                    <a class="nav-link" href="#aboutDiv" onclick="SwitchActive('about')">About us</a>
+                    <a id="aboutNavText" class="nav-link" href="#aboutDiv" onclick="SwitchActive('about')">About us</a>
                 </li>
                 <li id="servers" class="nav-item">
-                    <a class="nav-link" href="#serversDiv" onclick="SwitchActive('servers')">Servers</a>
+                    <a id="serversText" class="nav-link" href="#serversDiv" onclick="SwitchActive('servers')">Servers</a>
                 </li>
             </ul>
         </div>
+        <!---------------------------------------------------------------------------->
     </nav>
 
 
@@ -44,16 +46,17 @@
     <div class="d-flex flex-column">
         <div class="section d-flex flex-row">
             <div class="col-12 col-xl-6 d-flex flex-column align-items-center justify-content-center text-center">
-                <!-- Content for the first column -->
+                <!-- Logo and buttons of the homepage  -->
                 <div class="logo">
 
                 </div>
                 <div class="divisor"></div>
-                <p class="motivational-Phrase">Connect, Play, and Enjoy Your Stay!</p>
+                <p id="motivational" class="motivational-Phrase">Connect, Play, and Enjoy Your Stay!</p>
                 <div class="align-items-center justify-content-center text-center">
+                    <!------------------------buttons here-------------------------->
                     <div class="row">
                         <div class="col-12 col-md-6" onclick="href('https://discord.com/invite/mcgc')">
-                            <button class="default-button gradient-button active" >Join the discord</button>
+                            <button class="default-button gradient-button active" >discord</button>
                         </div>
                         <div class="col-12 col-md-6 mt-4 mt-md-0" onclick="href('https://status.meowstard.cat/status/mcgc')">
                             <button class="default-button gradient-outline-button">Status</button>
@@ -64,10 +67,11 @@
                             <button class="default-button twitch-outline-button">twitch</button>
                         </div>
                     </div>
+                    <!------------------------------------------------------------->
                 </div>
             </div>
             <div class="col-xl-6 d-none d-xl-flex flex-column align-items-center justify-content-center text-center">
-                <!-- Content for the second column -->
+                <!-- zero two image (disappears on monile for better ui) -->
                 <div class="zero-two-display">
                     <div class="zero-two-display"></div>
                     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡷⡀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -106,15 +110,23 @@
 
 
         </div>
+
+        <!-- About section -->
         <div id="aboutDiv" class="section gradientBg">
-            <!-- Content for the About section -->
+            <!--About us and cat image here-->
             <div class="row full-width">
                 <div class="custom-col">
+                    <!---------------- Text of the about section here--------->
                     <div class="text-container left-box">
-                        <h1 class="gradient-title luckiest-guy"> About Us </h1>
-                        <p class="luckiest-guy description"> <b class="color-orange">MeowstardCat's Gaming Community </b>was established in 2017. <br>
-                            We run game server for free no pay to win. </p>
+                        <h1 id="aboutTitle" class="gradient-title luckiest-guy"> About Us </h1>
+                        <p id="aboutText" class="luckiest-guy description"> 
+                            <b class="color-orange">MeowstardCat's Gaming Community </b>was established in 2017. <br>
+                            We run game server for free no pay to win. 
+                        </p>
                     </div>
+                    <!-------------------------------------------------------->
+                    
+                    <!--Cat also disappears on mobile devices-->
                     <div class="d-none d-xl-block cat-display">
                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡶⠒⠛⠛⠓⠒⠤⣄<br>
                         ⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣶⣦⠤⠤⠒⢛⣟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⠶⣦⣀<br>
@@ -124,7 +136,7 @@
                         ⠀⢀⣽⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡀<br>
                         ⠀⢸⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢡<br>
                         ⠀⢸⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘<br>
-                        ⠀⠘⠻⠿⣿⣿⣿⣿⣿⣦⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇<br>
+                        ⠀⠘⠻⠿⣿⣿⣿⣿⣿⣦⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇<br>
                         ⠀⠀⢀⠔⠈⢩⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣾⣿⣿⣿⣦⣄⣀⡀⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣬⡀<br>
                         ⠀⠀⠒⠂⠄⠈⠛⢛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣉⣿⣿⣷⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡏⠙⣄⣤⣤⣴⣶⣌⠭⠕⠒⠊⣉⠁⢸<br>
                         ⢀⠊⠀⠀⠈⠀⠈⠀⠀⠈⠙⢿⣿⣿⣿⡿⠟⠛⠿⠿⠿⢿⣿⣿⣿⣿⣼⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿⣿⣘⣿⣿⡟⣛⠉⠀⠀⠀⢠⠎⠀⠀⠀⡇<br>
@@ -145,13 +157,13 @@
                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⠂⠠⠤⠄⠀⠀⠀⠀⠐⠒⠊⠁<br>
                     </div>
                 </div>
+                <!---------------- Text of the why section here--------->
                 <div class="custom-col custom-right">
-                    <!-- Content for the right column -->
                     <div class="text-container right-box">
                         <br>
-                        <h1 class="gradient-title luckiest-guy"> why? </h1>
+                        <h1 id="whyTitle" class="gradient-title luckiest-guy"> why? </h1>
                         <br><br>
-                        <p class="luckiest-guy description"> We believe in fostering a community that <b class="color-orange">accepts anyone. </b><br>
+                        <p id="whyText" class="luckiest-guy description"> We believe in fostering a community that <b class="color-orange">accepts anyone. </b><br>
 
                             We like to have a place to <b class="color-orange">make new friends</b> and <b class="color-orange">have fun </b>in life and escape from hard times in life. <br>
                             
@@ -160,32 +172,46 @@
                             Hope to see you soon. </p>
                     </div>
                 </div>
+                <!-------------------------------------------------------->
             </div>
 
         </div>
+        
+        <!-- Servers section -->
         <div id="serversDiv" class="section">
-            <h1 class="luckiest-guy gradient-title bigger-title">
+            <h1 id="ourServers" class="luckiest-guy gradient-title bigger-title">
                 Our Servers
             </h1>
             <div class="container d-flex justify-content-center">
                 <div class="divisor"></div>
             </div>
 
+            <!----------------this is where divs generated will end---------------------------->
             <div id="container" class="container servers">
                 
             </div>
+            <!-------------------------------------------------------------------------------->
         </div>
+
+
+        <!-- Footer -->
+        <footer class="footer-size gradientBg">
+            <p id="thanks" class="thanks">
+                Special thank you to: <b>Aethasilia, Kamisoi, Saiaku, Whos</b> and <b>Nightmare</b><br>
+                for over the years <b>without you this community wouldn't be what it is today.</b>
+            </p>
+
+            <p class="credits">
+                Website made by <a href="https://github.com/luca611">luca611</a>
+            </p>
+        </footer>
+        
+        
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <footer class="footer-size gradientBg">
-            <p class="thanks">
-                Special thank you to: <b>Aethasilia, Kamisoi, Whos, Nightmare</b> and <b>Saiaku</b><br>
-                for over the years <b>without you this community wouldn't be what it is today.</b>
-            </p>
-        </footer>
 </body>
 
 </html>
