@@ -1,4 +1,4 @@
-// to get the json i used and external CORS proxy to bypass the CORS policy because apparenly normal fetch requests were getting blocked (This was a pain, i don't even know if it's the best way to do it but it works)
+// to get the json i used an external CORS proxy to bypass the CORS policy because apparenly normal fetch requests were getting blocked (This was a pain, i don't even know if it's the best way to do it but it works)
 const proxyUrl = 'https://corsproxy.io/?';
 const apiUrl = 'https://status.meowstard.cat/api/status-page/mcgc';
 

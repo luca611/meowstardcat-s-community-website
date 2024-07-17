@@ -28,7 +28,8 @@
     COMPONENTS
     - default button
     - section
-    - server card
+    - card
+    - footer
 */
 
 .default-button{
@@ -105,14 +106,56 @@
 
 
 /*---------------------------------------------------------------------------------------*/
-/*
-    PAGE STYLES
-    - body
-    - logo
-    - divisor
-    - momotivational phrase
-*/
+/*  HTML & BODY 
+    -html
+    -body
 
+    SCROLLBARS 
+    -webkit-scrollbar
+    -webkit-scrollbar-thumb
+    -webkit-scrollbar-thumb:hover
+    -*-moz-scrollbar
+    -*-moz-scrollbar-thumb
+    -*-moz-scrollbar-thumb:hover
+
+    LOGO & DIVISOR 
+    -logo
+    -divisor
+
+    MOTIVATIONAL PHRASE & TITLES 
+    -motivational-Phrase
+    -gradient-title
+
+    DISPLAY STYLES 
+    -zero-two-display
+    -cat-display
+
+    BACKGROUND GRADIENTS 
+    -gradientBg
+    -green-Gradient
+    -blue-Gradient
+
+    TEXT CONTAINERS 
+    -text-container
+    -left-box
+    -right-box
+
+    TEXT STYLES 
+    -description
+    -minor-spacing
+    -color-orange
+    -bigger-title
+    -thanks
+
+    SERVERS  
+    -servers
+    -titleCard
+    -card-margin
+
+    CREDITS 
+    -credits
+    -credits-a
+*/
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -346,6 +389,12 @@ body{
     color: var(--twitch);
 }
 
+
+/*---------------------------------------------------------------------------------------*/
+/*
+    MEDIA QUERIES
+    - 1024px
+*/
 @media (max-width: 1024px){
 
     .motivational-Phrase{
