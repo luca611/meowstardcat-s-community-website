@@ -87,6 +87,16 @@
     justify-content: center;
     align-items: center;
     transition: all .3s;
+    animation: popUp .5s ease-in-out;
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 /*---------------------------------------------------------------------------------------*/
 /*
@@ -159,6 +169,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-x: none;
 }
 
 
