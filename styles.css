@@ -236,7 +236,7 @@ body{
     font-size: 1.5rem;
     text-align: center;
     background-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -244,7 +244,7 @@ body{
     font-family: "Luckiest Guy", cursive;
     text-align: center;
     background-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -259,7 +259,7 @@ body{
     flex-wrap: nowrap;
     font-size: 1vw;
     background-image: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -271,8 +271,10 @@ body{
     align-items: center;
     resize: none;
     flex-wrap: nowrap;
-    font-size: 0.8vw;
-    color: black;
+    font-size: 0.45vw;
+    background-image: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-left: 6%;
 }
 
@@ -294,6 +296,10 @@ body{
     border-radius: 10px;
     margin-top: 5rem;
     font-weight: bold;
+}
+
+.min-height80{
+    min-height: 80vh;
 }
 
 .left-box{
@@ -442,6 +448,7 @@ body{
     .text-container{
         padding-left: 2rem;
         padding-right: 2rem;
+        height: auto;
     }
 
     .bigger-title{
@@ -472,5 +479,9 @@ body{
 
     .credits{
         font-size: 0.7rem;
+    }
+
+    .min-height80{
+        min-height: auto;
     }
 }
