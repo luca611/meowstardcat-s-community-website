@@ -17,8 +17,10 @@
     <nav class="navbar-color luckiest-guy navbar navbar-expand-lg navbar-dark fixed-top">
         <!--lang translation buttons-->
         <span>
-            <button id="engButton" class="default-button gradient-button active nav-button" onclick="translateTo(0)">eng</button>
-            <button id="catButton" class="default-button gradient-button nav-button" onclick="translateTo(1)">cat</button>
+            <button id="engButton" class="default-button gradient-button active nav-button"
+                onclick="translateTo(0)">eng</button>
+            <button id="catButton" class="default-button gradient-button nav-button"
+                onclick="translateTo(1)">cat</button>
         </span>
 
         <!----------------------------------- Navbar links --------------------------->
@@ -35,7 +37,8 @@
                     <a id="aboutNavText" class="nav-link" href="#aboutDiv" onclick="SwitchActive('about')">About us</a>
                 </li>
                 <li id="servers" class="nav-item">
-                    <a id="serversText" class="nav-link" href="#serversDiv" onclick="SwitchActive('servers')">Servers</a>
+                    <a id="serversText" class="nav-link" href="#serversDiv"
+                        onclick="SwitchActive('servers')">Servers</a>
                 </li>
             </ul>
         </div>
@@ -57,47 +60,20 @@
                     <!------------------------buttons here-------------------------->
                     <div class="row">
                         <div class="col-12 col-md-6" onclick="href('https://discord.com/invite/mcgc')">
-                            <button class="default-button gradient-button active" >discord</button>
+                            <button class="default-button gradient-button active">discord</button>
                         </div>
-                        <div class="col-12 col-md-6 mt-4 mt-md-0" onclick="href('https://status.meowstard.cat/status/mcgc')">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0"
+                            onclick="href('https://status.meowstard.cat/status/mcgc')">
                             <button class="default-button gradient-outline-button">Status</button>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center mt-4" onclick="href('https://www.twitch.tv/TheMeowstardCat')">
+                    <div class="row d-flex justify-content-center mt-4"
+                        onclick="href('https://www.twitch.tv/TheMeowstardCat')">
                         <div class="col-12 col-md-6">
                             <button class="default-button twitch-outline-button">twitch</button>
                         </div>
                     </div>
-                    <!--Cat also disappears on mobile devices-->
-                    <div class="d-none d-xl-block cat-display">
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡶⠒⠛⠛⠓⠒⠤⣄<br>
-                        ⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣶⣦⠤⠤⠒⢛⣟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⠶⣦⣀<br>
-                        ⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⠟⠑⠶⠶⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠑⠒⠤⢄⣀⠀⠀⢀⣀<br>
-                        ⠀⠀⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠔⠒⠉⠉⠉⠉⠒⠫⠉⠉⠁⠀⠀⠀⠉⠦⡀<br>
-                        ⠀⠀⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⡀<br>
-                        ⠀⢀⣽⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡀<br>
-                        ⠀⢸⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢡<br>
-                        ⠀⢸⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘<br>
-                        ⠀⠘⠻⠿⣿⣿⣿⣿⣿⣦⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇<br>
-                        ⠀⠀⢀⠔⠈⢩⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣾⣿⣿⣿⣦⣄⣀⡀⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣬⡀<br>
-                        ⠀⠀⠒⠂⠄⠈⠛⢛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣉⣿⣿⣷⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡏⠙⣄⣤⣤⣴⣶⣌⠭⠕⠒⠊⣉⠁⢸<br>
-                        ⢀⠊⠀⠀⠈⠀⠈⠀⠀⠈⠙⢿⣿⣿⣿⡿⠟⠛⠿⠿⠿⢿⣿⣿⣿⣿⣼⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿⣿⣘⣿⣿⡟⣛⠉⠀⠀⠀⢠⠎⠀⠀⠀⡇<br>
-                        ⡌⠀⠀⠀⠀⠈⠁⠈⠉⠐⠠⡘⢌⡉⠉⡀⠰⠁⠀⣢⣴⠪⠭⠭⠙⠛⠛⠛⠋⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡶⡄⠀⢇⠀⠀⠀⢰<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢢⠀⠀⠀⠀⠀⠁⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⡿⠿⣿⣿⣿⡏⠙⣿⣿⠁⠁⢢⠁⠀⠀⠀⡜<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠡⠀⠀⠀⠀⢃⠀⠁⠈⠉⠓⢤⡀⠀⠀⠀⠀⠀⠀⠹⣿⣿⢿⠁⠀⠘⣿⣿⣷⠀⠈⠁⠀⠀⠀⢃⠀⢀⠜<br>
-                        ⢃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢃⠀⠀⠀⠀⢂⠀⠀⠀⠀⠀⠞⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁⠀⠀⠀⢻⣿⡿⠀⠀⠀⠀⢀⡠⠸⠀⠊<br>
-                        ⢻⣿⣷⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⣀⠴⠀⠀⠀⠀⠀⠉⠉⠉⠀⠀⠈⠐⢄<br>
-                        ⣼⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠔⠀⠈⠢⡀⠀⢀⠄⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠀⠀⠢⣿⠂⠀⠀⠀⠀⠀⠀⠀⢪<br>
-                        ⣿⣿⣿⣿⣿⣏⠹⡍⢻⣶⣤⣀⡀⠀⠀⡈⢢⠄⠘⠀⠀⠀⠀⠘⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠒⠁⠉⣁⡀⢀⣀⠀⢀⣠⠜<br>
-                        ⠻⠿⣿⣿⣿⣿⣤⣹⣎⠿⣿⣿⣿⣿⣶⣦⣈⡸⠸⡀⠀⠀⠀⠀⠘⠂⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⣠⣾⣶⣶⣶⣦⣍⣉⡓⠒⠄<br>
-                        ⠀⠀⠀⠉⠛⠿⣿⣿⣿⣿⣶⣤⡤⠴⠒⠯⣿⣿⣶⣵⣄⠀⠀⠀⠀⠀⠣⡠⠀⠀⠠⠐⠊⠁⠀⠀⠀⠈⠑⢄⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡐⢠<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⢿⣿⣿⣶⣤⡀⠈⠛⠿⠿⡿⣿⣶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠐⡄⠀⢱⣈⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠓⠉<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠿⢷⣄⣀⣀⣀⠑⢿⣿⣿⣿⣿⣶⣦⣤⡤⠤⣶⣾⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⡆<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⠿⣿⣾⣯⣭⡉⠁⠀⠀⢡⠀⠈⠛⠛⠛⠋⠉⠀⠀⠀⠀⠀⠉⠉⠋⠉⠁⠀⠀⠀⠀⠀⡘<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⢿⣶⣦⡄⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠜<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠢⠝⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠔⠁<br>
-                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⠂⠠⠤⠄⠀⠀⠀⠀⠐⠒⠊⠁<br>
-                    </div>
+
                     <!------------------------------------------------------------->
                 </div>
             </div>
@@ -150,13 +126,43 @@
                     <!---------------- Text of the about section here--------->
                     <div class="text-container min-height80 left-box">
                         <h1 id="aboutTitle" class="gradient-title luckiest-guy"> About Us </h1>
-                        <p id="aboutText" class="luckiest-guy description"> 
+                        <p id="aboutText" class="luckiest-guy description">
                             <b class="color-orange">MeowstardCat's Gaming Community </b>was established in 2017. <br>
-                            We run game server for free no pay to win. 
+                            We run game server for free no pay to win.
                         </p>
+                        <!--Cat also disappears on mobile devices-->
+                        <div class="d-none d-xl-block cat-display">
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡶⠒⠛⠛⠓⠒⠤⣄<br>
+                            ⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣶⣦⠤⠤⠒⢛⣟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⠶⣦⣀<br>
+                            ⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⠟⠑⠶⠶⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠑⠒⠤⢄⣀⠀⠀⢀⣀<br>
+                            ⠀⠀⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠔⠒⠉⠉⠉⠉⠒⠫⠉⠉⠁⠀⠀⠀⠉⠦⡀<br>
+                            ⠀⠀⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⡀<br>
+                            ⠀⢀⣽⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡀<br>
+                            ⠀⢸⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢡<br>
+                            ⠀⢸⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘<br>
+                            ⠀⠘⠻⠿⣿⣿⣿⣿⣿⣦⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇<br>
+                            ⠀⠀⢀⠔⠈⢩⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣾⣿⣿⣿⣦⣄⣀⡀⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣬⡀<br>
+                            ⠀⠀⠒⠂⠄⠈⠛⢛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣉⣿⣿⣷⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡏⠙⣄⣤⣤⣴⣶⣌⠭⠕⠒⠊⣉⠁⢸<br>
+                            ⢀⠊⠀⠀⠈⠀⠈⠀⠀⠈⠙⢿⣿⣿⣿⡿⠟⠛⠿⠿⠿⢿⣿⣿⣿⣿⣼⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿⣿⣘⣿⣿⡟⣛⠉⠀⠀⠀⢠⠎⠀⠀⠀⡇<br>
+                            ⡌⠀⠀⠀⠀⠈⠁⠈⠉⠐⠠⡘⢌⡉⠉⡀⠰⠁⠀⣢⣴⠪⠭⠭⠙⠛⠛⠛⠋⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡶⡄⠀⢇⠀⠀⠀⢰<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢢⠀⠀⠀⠀⠀⠁⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⡿⠿⣿⣿⣿⡏⠙⣿⣿⠁⠁⢢⠁⠀⠀⠀⡜<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠡⠀⠀⠀⠀⢃⠀⠁⠈⠉⠓⢤⡀⠀⠀⠀⠀⠀⠀⠹⣿⣿⢿⠁⠀⠘⣿⣿⣷⠀⠈⠁⠀⠀⠀⢃⠀⢀⠜<br>
+                            ⢃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢃⠀⠀⠀⠀⢂⠀⠀⠀⠀⠀⠞⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁⠀⠀⠀⢻⣿⡿⠀⠀⠀⠀⢀⡠⠸⠀⠊<br>
+                            ⢻⣿⣷⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⣀⠴⠀⠀⠀⠀⠀⠉⠉⠉⠀⠀⠈⠐⢄<br>
+                            ⣼⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠔⠀⠈⠢⡀⠀⢀⠄⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠀⠀⠢⣿⠂⠀⠀⠀⠀⠀⠀⠀⢪<br>
+                            ⣿⣿⣿⣿⣿⣏⠹⡍⢻⣶⣤⣀⡀⠀⠀⡈⢢⠄⠘⠀⠀⠀⠀⠘⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠒⠁⠉⣁⡀⢀⣀⠀⢀⣠⠜<br>
+                            ⠻⠿⣿⣿⣿⣿⣤⣹⣎⠿⣿⣿⣿⣿⣶⣦⣈⡸⠸⡀⠀⠀⠀⠀⠘⠂⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⣠⣾⣶⣶⣶⣦⣍⣉⡓⠒⠄<br>
+                            ⠀⠀⠀⠉⠛⠿⣿⣿⣿⣿⣶⣤⡤⠴⠒⠯⣿⣿⣶⣵⣄⠀⠀⠀⠀⠀⠣⡠⠀⠀⠠⠐⠊⠁⠀⠀⠀⠈⠑⢄⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡐⢠<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⢿⣿⣿⣶⣤⡀⠈⠛⠿⠿⡿⣿⣶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠐⡄⠀⢱⣈⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠓⠉<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠿⢷⣄⣀⣀⣀⠑⢿⣿⣿⣿⣿⣶⣦⣤⡤⠤⣶⣾⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⡆<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⠿⣿⣾⣯⣭⡉⠁⠀⠀⢡⠀⠈⠛⠛⠛⠋⠉⠀⠀⠀⠀⠀⠉⠉⠋⠉⠁⠀⠀⠀⠀⠀⡘<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠻⢿⣶⣦⡄⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠜<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠢⠝⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠔⠁<br>
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⠂⠠⠤⠄⠀⠀⠀⠀⠐⠒⠊⠁<br>
+                        </div>
                     </div>
                     <!-------------------------------------------------------->
-                    
+
                 </div>
                 <!---------------- Text of the why section here--------->
                 <div class="custom-col custom-right">
@@ -164,12 +170,15 @@
                         <br>
                         <h1 id="whyTitle" class="gradient-title luckiest-guy"> why? </h1>
                         <br><br>
-                        <p id="whyText" class="luckiest-guy description"> We believe in fostering a community that <b class="color-orange">accepts anyone. </b><br>
+                        <p id="whyText" class="luckiest-guy description"> We believe in fostering a community that <b
+                                class="color-orange">accepts anyone. </b><br>
 
-                            We like to have a place to <b class="color-orange">make new friends</b> and <b class="color-orange">have fun </b>in life and escape from hard times in life. <br>
-                            
-                            Every day is a struggle no matter what you go thorugh and <b class="color-orange">having a place to enjoy and make friends is why MCGC was started. </b><br><br>
-                            
+                            We like to have a place to <b class="color-orange">make new friends</b> and <b
+                                class="color-orange">have fun </b>in life and escape from hard times in life. <br>
+
+                            Every day is a struggle no matter what you go thorugh and <b class="color-orange">having a
+                                place to enjoy and make friends is why MCGC was started. </b><br><br>
+
                             Hope to see you soon. </p>
                     </div>
                 </div>
@@ -177,7 +186,7 @@
             </div>
 
         </div>
-        
+
         <!-- Servers section -->
         <div id="serversDiv" class="section">
             <h1 id="ourServers" class="luckiest-guy gradient-title bigger-title">
@@ -189,7 +198,7 @@
 
             <!----------------this is where divs generated will end---------------------------->
             <div id="container" class="container servers">
-                
+
             </div>
             <!-------------------------------------------------------------------------------->
         </div>
@@ -206,8 +215,8 @@
                 Website made by <a href="https://github.com/luca611">luca611</a>
             </p>
         </footer>
-        
-        
+
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
