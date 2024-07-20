@@ -1,5 +1,6 @@
-// to get the json i used an external CORS proxy to bypass the CORS policy because apparenly normal fetch requests were getting blocked (This was a pain, i don't even know if it's the best way to do it but it works)
-const proxyUrl = 'https://corsproxy.io/?';
+// to get the json i used an external CORS proxy to bypass the CORS policy because normal fetch requests were getting blocked by the server
+
+const proxyUrl = 'https://corsproxy.io/?'; //<--- //this is the proxy i used to bypass the CORS policy
 const apiUrl = 'https://status.meowstard.cat/api/status-page/mcgc';
 
 fetch(proxyUrl + encodeURIComponent(apiUrl))
@@ -120,6 +121,7 @@ function createCards(data) {
 }
 
 
+//translations structure: Html Id -> content
 const translations = {
   "eng": {
     "motivational": "Connect, Play, and Enjoy Your Stay!",
@@ -143,11 +145,11 @@ const translations = {
     "aboutText": "<b class='color-orange'>MeowstardCat's Gaming Community </b>va ser establerta el 2017. <br>Correm servidors de jocs gratuïts sense pagament per guanyar.",
     "whyTitle": "Per què?",
     "whyText": "Creiem en fomentar una comunitat que <b class='color-orange'>accepti a tothom. </b><br>Nosaltres volem tenir un lloc per <b class='color-orange'>fer nous amics</b> i <b class='color-orange'>divertir-nos </b>en la vida i escapar de temps difícils en la vida. <br>Cada dia és una lluita, sense importar el que passis i <b class='color-orange'>tenir un lloc per gaudir i fer amics és per què es va començar MCGC. </b><br><br>Esperem veure't aviat. </p>",
-    "thanks": "Un agraïment especial a: <b>Aethasilia, Kamisoi, Saiaku, Whos</b> and <b>Nightmare</b><br>per tots aquests anys <b> sense vosaltres aquesta comunitat no seria el que és avui. </b>"
+    "thanks": "Un agraïment especial a: <b>Aethasilia, Kamisoi, Saiaku, Whos</b> i <b>Nightmare</b><br>per tots aquests anys <b> sense vosaltres aquesta comunitat no seria el que és avui. </b>"
   }
 };
 
-
+//get the language from the buttons 0 -> english, 1 -> catalan and use the translation array to get the ids and the content to put inside
 function translateTo(lang) {
 
   const language = lang === 0 ? 'eng' : 'cat';
